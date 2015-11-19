@@ -1,0 +1,88 @@
+\documentclass[10pt]{article} %Sets the default text size to 11pt and class to article.
+
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+%Sets the geometry for the page
+\geometry{letterpaper,portrait,margin=0.5in}
+
+%Reduces space between section declarations
+\titlespacing*{\section}{0pt}{0ex}{0ex}
+
+%Deletes the page number at the bottom of the page
+\pagenumbering{gobble}
+
+
+\begin{document}
+
+%Block for personal information
+\LARGE\noindent\rightline{Steven Sheffey}
+\normalsize
+\noindent\rightline{5591 Hunters Point Pike}
+\noindent\rightline{Lebanon, TN 37087}
+\noindent\rightline{615-879-6670}
+\noindent\rightline{stevensheffey4@gmail.com}
+\noindent\rightline{\href{https://github.com/Starfys}{Github:Starfys}}
+
+%Horizontal rule
+\hrulefill
+
+%Main table for content
+%Syntax for a line is
+%Section label & content \\
+\renewcommand\arraystretch{0.1}
+\begin{tabularx}{\textwidth}{p{3cm} X}
+\section*{Experience}
+
+& \section*{System Administrator (Aug 2014 - present)}
+Middle Tennessee State University - Computer Science Department
+\begin{itemize}
+\setlength{\itemsep}{1pt}
+\item Maintained and created production Debian servers to satisfy a variety of departmental needs.
+\item Performed various basic maintenance tasks for multiple computer labs
+\item Designed an automated and flexible storage monitoring solution.
+\item Created a scheduling and appointment system
+\item Improved security of several existing production servers
+\end{itemize}
+\section*{MTSU Makers Club President (Aug 2015 - Present)}
+Middle Tennessee State University - MTSU Makers
+\begin{itemize}
+\setlength{\itemsep}{1pt}
+\item Created a makers space in cooperation with the MTSU library to provide resources for students interested in software and hardware development
+\item Gave a lecture and demonstration of ethical hacking in order to promote awareness of modern issues in network security.
+\item Designed a robust temperature monitoring system to evaluate the efficiency of on-campus heating and cooling systems.
+\end{itemize}\\ 
+\section*{Education} & \section*{Middle Tennessee State University}
+B.S. Computer Science (Aug 2014 - Present)\\
+\section*{Projects} &
+\section*{Professional}
+\begin{description}[noitemsep]
+    \item[Sustainability Project] A distributed, robust, and efficient temperature monitoring system using Raspberry Pi and Python. Uses a minimal GNU/Linux operating system to maximize performance.
+    \item[Makers Infrasructure] An LDAP/NFS-based server used to provide centralized access to development resources for club members
+    \item[Appointment System] A calendar system written in PHP used to schedule access to a departmental meeting room
+\end{description}
+\section*{Personal}
+\begin{description}
+    \setlength{\itemsep}{1pt}
+    \item [ss-neural-net] A simple neural net implementation in c++
+    \item [octo-computing-machine] A testing ground for A.I in an agar.io-like environment
+\end{description}\\
+\section*{Proficiencies} &
+\begin{description}
+    \setlength{\itemsep}{1pt}
+    \item[Linux:] Knowledge of most of the structure of the Linux operating system. Professional experience with Debian.
+    \item[C++] Primarily used for any performance-dependent project. Most coursework and programming challenges done with C++.
+    \item[Python] Used extensively for any sort of api access or automation scripting.
+\end{description}\\
+
+\section*{Awards} & 
+\begin{description}
+    \item[2015 Outstanding Sophomore Award] Awarded by the MTSU Computer Science Department to the most impressive sophomore in the department
+    \item[ACM ICPC] 6th place in 2015 regional ACM International Collegiate Programming Contest
+\end{description}
+
+
+\end{tabularx}
+\end{document}
