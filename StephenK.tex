@@ -1,0 +1,84 @@
+\documentclass[10pt]{article} %Sets the default text size to 11pt and class to article.
+
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+%Sets the geometry for the page
+\geometry{letterpaper,portrait,margin=0.5in}
+
+%Reduces space between section declarations
+\titlespacing*{\section}{0pt}{0ex}{0ex}
+
+%Deletes the page number at the bottom of the page
+\pagenumbering{gobble}
+
+\begin{document}
+\LARGE\noindent\rightline{Stephen Kinser}
+\normalsize
+\noindent\rightline{1311 Greenland Dr.}
+\noindent\rightline{615-972-1663}
+\noindent\rightline{sdkinser456@gmail.com}
+\noindent\rightline{\href{https://github.com/Riuchando} {https://github.com/Riuchando}}
+\hrulefill
+\renewcommand\arraystretch{0.1}
+\begin{tabularx}{\textwidth}{p{3cm} X}
+\section*{Experience}
+
+& \section*{Research Assistant (Aug 2014 - present)}
+Middle Tennessee State University - Computer Science Department
+\begin{itemize}
+\setlength{\itemsep}{1pt}
+\item Addressed streamlining and concurrency issues in research of HIV vaccines using Bash and Openmp
+\item Designed a pipeline architecture to manage and evaluate the data which generated
+\item Writing error recovery system for interruptions of Projects in progress
+\item constructed an automated message sender to notify of project’s progress
+\end{itemize}
+\section*{Library Hardware and Web Developer (Aug 2016 - Present)}
+Middle Tennessee State University - MTSU Makers
+\begin{itemize}
+%for web jobs
+\setlength{\itemsep}{1pt}
+\item Created a makers space in cooperation with the MTSU library to provide resources for students interested in software and hardware development
+\item interfaced Library Proprietary API for computer use detection to display using a simple web page (Javascript and HTML)
+\end{itemize}\\
+\section*{Education} & \section*{Middle Tennessee State University}
+B.S. Computer Science (Aug 2011 - Present)\\
+\section*{Projects} &
+\section*{Professional}
+\begin{description}[noitemsep]
+    %for hardware possiblities
+    \item[Sustainability Project] Soldered heat sensors that communicate over Wi-Fi to measure the inefficiencies in the ventilation and circulations
+    %for Analysis jobs
+    \item[Makers Analysis] generated graphs in R and LaTeX to measure the large fluctuations of the temperature and humidity
+    %for Web jobs
+    \item[Makers Website] Website design using Django for database and Bootstrap Css
+    \item[Class Project] Created interactive SVG graphs using D3 based on data retrieved from P-SQL Database
+\end{description}
+\section*{Personal}
+\begin{description}
+    \setlength{\itemsep}{1pt}
+    %for hardware possiblities
+    \item [Hack Tennesse Hackathon 2015] interfaced Arduino with Google serial reader using JSON objects to play midi files in a web browser
+    %for API usages
+    \item [Hack Vandy Hackathon 2015] interfaced Google Streetview Javascript API to work with Google Tango motion detection
+    %for Number theory and fun
+    \item[Online Coding Challenges] Worked Collaboratively on Project Euler (100 problems), Advent of Code, Codewars, and Kattis
+\end{description}\\
+\section*{Proficiencies} &
+\begin{description}
+    \setlength{\itemsep}{1pt}
+    \item[C++] Primarily used for any performance-dependent project. Most coursework and programming challenges done with C++.
+    \item[Python] Used for any prototyping of a project and any data retrieval/munging, preferred language of API usage
+    \item[R] Used for analysis and prototyping
+    %not sure if I want to include this
+    \item[Clojure] Used for fun on different projects and as a case study on Parallelism
+\end{description}\\
+
+\section*{Awards} &
+\begin{description}
+    \item[ACM ICPC] 6th place in 2015 regional ACM International Collegiate Programming Contest
+\end{description}
+\end{tabularx}
+\end{document}
